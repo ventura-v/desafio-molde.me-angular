@@ -1,0 +1,22 @@
+<div>
+  <h3>Editar Produto</h3>
+</div>
+<form class="example-container" [formGroup]="productForm" (ngSubmit)="updateProduct(productForm.value)">
+  <mat-form-field>
+    <input matInput name="name" placeholder="Nome do Produto" formControlName="name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput name="price" placeholder="Preço do Produto" formControlName="price">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput name="width" placeholder="Largura do Produto (cm)" formControlName="width">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput name="length" placeholder="Comprimento do Produto (cm)" formControlName="length">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput name="grammage" placeholder="Gramatura do Produto (g/m²)" formControlName="grammage">
+  </mat-form-field>
+
+  <button type="submit" [disabled]="!productForm.valid" mat-button color="primary">Atualizar</button>
+</form>

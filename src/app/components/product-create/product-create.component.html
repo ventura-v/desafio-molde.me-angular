@@ -1,0 +1,22 @@
+<div>
+  <h3>Adicionar Novo Produto</h3>
+</div>
+<form class="example-container" [formGroup]="productForm" (ngSubmit)="addProduct(productForm.value)">
+  <mat-form-field>
+    <input matInput name="name" placeholder="Nome" formControlName="name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput name="price" placeholder="Preço" formControlName="price">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput name="width" placeholder="Largura (m)" formControlName="width">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput name="length" placeholder="Comprimento (m)" formControlName="length">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput name="grammage" placeholder="Gramatura (g/m²)" formControlName="grammage">
+  </mat-form-field>
+
+  <button type="submit" [disabled]="!productForm.valid" mat-button color="primary">Adicionar</button>
+</form>

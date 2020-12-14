@@ -1,0 +1,61 @@
+<div class="example-container mat-elevation-z8">
+  <div class="example-loading-shade" *ngIf="isLoadingResults">
+    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+  </div>
+  <div class="button-row">
+    <button mat-flat-button color="accent" [routerLink]="['/produtos']">
+      <mat-icon>list</mat-icon> Voltar
+    </button>
+  </div>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>
+        <h2>{{product.name}}</h2>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <dl>
+        <div>
+          <dt>Preço:</dt>
+          <dd>R$ {{product.price}}</dd>
+        </div>
+        <div>
+          <dt>Largura:</dt>
+          <dd>{{product.width}} m</dd>
+        </div>
+        <div>
+          <dt>Comprimento:</dt>
+          <dd>{{product.length}} m</dd>
+        </div>
+        <div>
+          <dt>Gramatura:</dt>
+          <dd>{{product.grammage}} g/m²</dd>
+        </div>
+        <div>
+          <dt>Peso:</dt>
+          <dd>{{product.peso_produto}} kg</dd>
+        </div>
+        <div>
+          <dt>Frete:</dt>
+          <dd>R$ {{product.frete_produto}}</dd>
+        </div>
+        <div>
+          <dt>Valor total:</dt>
+          <dd>R$ {{product.valor_total_produto}}</dd>
+        </div>
+        <div>
+          <dt>Quantidade de Camisas:</dt>
+          <dd>{{product.camisas_produto}}</dd>
+        </div>
+      </dl>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button color="primary" class="teste" [routerLink]="['/produto/editar', product.id]">
+        <mat-icon>edit</mat-icon> Editar
+      </button>
+      <button mat-flat-button color="warn" (click)="deleteProduct(product.id)">
+        <mat-icon>delete</mat-icon> Excluir
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

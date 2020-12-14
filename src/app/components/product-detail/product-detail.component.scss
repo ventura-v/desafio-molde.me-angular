@@ -1,0 +1,41 @@
+.example-container{
+  height: 73vh;
+  max-width: 90%;
+  margin: auto;
+}
+
+.mat-card{
+  max-width: 95%;
+  margin: auto;
+  padding-left: 30px;
+}
+
+h2{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 30px;
+}
+
+dl div{
+  width: 30%;
+  margin-bottom: 0 0 15px 0;
+  transition: transform 0.5s;
+}
+
+dl div:hover{
+  cursor: default;
+  transform: scale(1.1);
+}
+
+dt{
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+dd{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+button{
+  margin-right: 10px;
+}

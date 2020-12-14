@@ -1,0 +1,30 @@
+.container{
+  height: 88vh;
+}
+
+table{
+  width: 95%;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+th.mat-header-cell, td{
+  padding-left: 0;
+  text-align: center;
+}
+
+h3{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.coast-container{
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto';
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.coast-container th{
+  margin-right: 10px;
+}

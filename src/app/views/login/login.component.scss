@@ -1,0 +1,22 @@
+.login-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 40%;
+  margin: auto;
+  height: 90vh;
+}
+
+.title{
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+mat-form-field{
+  width: 100%;
+}
+
+.login-btn{
+  margin: 10px auto;
+  width: 30%;
+}
